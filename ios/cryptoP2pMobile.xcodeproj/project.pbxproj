@@ -163,6 +163,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				096EF166148927D80ABFB6EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +186,8 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				546D4C37042653F0AD09FF36 /* [CP] Embed Pods Frameworks */,
+				A11659F1290EA10300B0F274 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -267,6 +270,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		096EF166148927D80ABFB6EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile-cryptoP2pMobileTests/Pods-cryptoP2pMobile-cryptoP2pMobileTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile-cryptoP2pMobileTests/Pods-cryptoP2pMobile-cryptoP2pMobileTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile-cryptoP2pMobileTests/Pods-cryptoP2pMobile-cryptoP2pMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546D4C37042653F0AD09FF36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile/Pods-cryptoP2pMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile/Pods-cryptoP2pMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cryptoP2pMobile/Pods-cryptoP2pMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11659F1290EA10300B0F274 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT=`/usr/bin/find \"${SRCROOT}\" -name newrelic_postbuild.sh | head -n 1`\n\nif [ -z \"${SCRIPT}\"]; then\n\nARTIFACT_DIR=\"${BUILD_DIR%Build/*}SourcePackages/artifacts\"\n\nSCRIPT=`/usr/bin/find \"${ARTIFACT_DIR}\" -name newrelic_postbuild.sh | head -n 1`\n\nfi\n\n/bin/sh \"${SCRIPT}\" \"eu01xx2ff4c8d8f332d4423937a87301986ab0d816-NRMA\"\n";
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

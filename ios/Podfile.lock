@@ -11,6 +11,10 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.70.4)
   - fmt (6.2.1)
   - glog (0.3.5)
+  - newrelic-react-native-agent (0.0.7):
+    - NewRelicAgent (= 7.3.7)
+    - React
+  - NewRelicAgent (7.3.7)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -305,6 +309,8 @@ DEPENDENCIES:
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - newrelic-react-native-agent (from `../node_modules/newrelic-react-native-agent`)
+  - NewRelicAgent
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -340,6 +346,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - fmt
+    - NewRelicAgent
 
 EXTERNAL SOURCES:
   boost:
@@ -352,6 +359,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/React/FBReactNativeSpec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  newrelic-react-native-agent:
+    :path: "../node_modules/newrelic-react-native-agent"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -420,6 +429,8 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: b475991eb2d8da6a4ec32d09a8df31b0247fa87d
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
+  newrelic-react-native-agent: a27219ae7c4e82985e7dd5e86ccd65fdb09e33f0
+  NewRelicAgent: 13afbb9545e287293cf7514d344be4ebc9413c6e
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: 49a2c4d4215580d8b24ed538ae01b6de20b43a76
   RCTTypeSafety: 55d538399fe8b51e5cd862e2ec2f9b135b07e783
@@ -451,6 +462,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   Yoga: 1f02ef4ce4469aefc36167138441b27d988282b1
 
-PODFILE CHECKSUM: 84b9f74a554066672b423ca70dd5a3e421fcc4e3
+PODFILE CHECKSUM: 370bff7a11a72b4e10cbb814c336fa2cd4e67cf8
 
 COCOAPODS: 1.11.3

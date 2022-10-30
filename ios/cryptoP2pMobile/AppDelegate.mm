@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 
+#import <NewRelic/NewRelic.h>
+
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -31,6 +33,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [NewRelic startWithApplicationToken:@"eu01xx2ff4c8d8f332d4423937a87301986ab0d816-NRMA"];
   RCTAppSetupPrepareApp(application);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];

@@ -5,6 +5,8 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import android.os.Bundle;
 
+import com.newrelic.agent.android.NewRelic;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -22,6 +24,9 @@ public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(null);
+    NewRelic.withApplicationToken(
+      "{{ NR APP KEY HERE }}"
+    ).start(this.getApplicationContext());
   }
 
   /**
